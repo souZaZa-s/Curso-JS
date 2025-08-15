@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="fundo">
+    <header>
+        <h1> Exercicio 2: Criar dois botões: um para fundo azul e outro para voltar ao branco. 👌</h1>
+    </header>
+    <div>
+        <button onclick="trocaCor('azul')">Fundo Azul🔵</button>
+        <button onclick="trocaCor('branco')">Fundo Branco⚪</button>
+    </div>
+
+</body>
+<style>
+    *{
+        text-align: center;
+    }
+</style>
+<script>
+    const cores = {
+        azul: "blue",
+        branco: "white"
+    };
+    
+    function trocaCor(cor){
+        document.getElementById("fundo").style.backgroundColor = cores[cor];
+
+    }
+    
+
+</script>
+</html>

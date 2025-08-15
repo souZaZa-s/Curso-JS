@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hrquest">Que horas são?🕰️</button>
+
+</body>
+<style>
+    *{
+        text-align: center;
+    }
+</style>
+<script>
+    function Horario(){
+    let agora = new Date();
+    let hora = agora.toLocaleTimeString();
+    alert("Hora atual:  " + hora);}
+
+    document.getElementById("hrquest").addEventListener("click", Horario);
+</script>
+</html>

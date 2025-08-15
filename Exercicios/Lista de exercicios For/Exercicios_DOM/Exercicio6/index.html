@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio6</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicio 6: Formulario muito top👌!!</h1>
+    </header>
+    <div class="form-box">
+    <form id="form">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu usuário" required />
+        
+
+        <label for="password">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+    <p class="footer-text">Esqueceu a senha?<a href="#">Clique aqui</a></p>
+        </div>
+</body>
+<script>
+    const form = document.getElementById("form")
+    function mostrarDados(event){
+        event.preventDefault();
+        let nome = document.getElementById("username").value
+    let senha = document.getElementById("senha").value
+        alert("Seus dados são: " + nome + " " + senha);
+    }
+    
+    form.addEventListener("submit", mostrarDados)
+
+    
+
+    document.getElementById("enviar").addEventListener("click", mostrarDados)
+    
+</script>
+</html>
