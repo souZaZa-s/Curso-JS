@@ -1,59 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 2</title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body id="fundo">
-        <header>
-            <h1>Bem vindo a pagina que muda de cor,</h1>
-        </header>
-        <div>
-            <p>Para trocar a cor da pagina digite um cor entre: branco, preto, azul, vermelho, verde, amarelo, roxo e rosa.</p>
-            <input id="corInput" type="text">
-            <button id="botaoEnviar">Enviar</button>
-        </div>
+    <header>
+        <h1 id="titulo">Bem-vindo à página que muda de cor!</h1>
+    </header>
 
-        <style>
-            header{
-                text-align: center;
-            }
-            div{
-                text-align: center;
+    <div>
+        <p id="paragrafo"> uma cor entre: branco, preto, azul, vermelho, verde, amarelo, roxo e rosa.</p>
+        <input id="corInput" type="text" placeholder="Digite uma cor">
+        <button id="botaoEnviar">Enviar</button>
+    </div>
 
-            }
-        </style>
-        <script>
-             function trocacorInput(){
-            let inputcolor = document.getElementById("corInput").value.toLowerCase();
+    <script>
+        
+        const mapaDeCores = {
+            "branco": "white",
+            "preto": "black",
+            "azul": "blue",
+            "verde": "green",
+            "amarelo": "yellow",
+            "roxo": "blueviolet",
+            "rosa": "pink",
+            "vermelho": "red"
+        };
 
-            let cor = "";
-            if(inputcolor == "branco"){
-                cor = "white"
-            } else if(inputcolor == "preto"){
-                cor = "black"
-            } else if(inputcolor == "azul"){
-                cor = "blue"
-            } else if(inputcolor == "verde"){
-                cor = "green"
-            } else if(inputcolor == "amarelo"){
-                cor = "yellow"
-            } else if(inputcolor == "roxo"){
-                cor = "purple"
-            } else if(inputcolor == "rosa"){
-                cor = "pink"
-            } else if(inputcolor == "vermelho"){
-                cor = "red"
-            } else{
-                alert("Cor Invalida")
-            }
+        function trocarCorInput() {
+    const input = document.getElementById("corInput");
+    const inputColor = input.value.trim().toLowerCase();
 
-                document.body.style.backgroundColor = cor;
-                
-            }
-           document.getElementById("botaoEnviar").addEventListener("click", trocacorInput);
-           
-        </script>
+    const cor = mapaDeCores[inputColor];
+    const paragrafo = document.getElementById("paragrafo");
+    const titulo = document.getElementById("titulo")
+
+    if (cor) {
+        document.body.style.backgroundColor = cor;
+        if (cor === "black") {
+            paragrafo.style.color = "white";
+            titulo.style.color = "white"
+        } else {
+            paragrafo.style.color = "black";
+            titulo.style.color = "black"
+        }
+    } else {
+        alert("Cor inválida! Tente uma das seguintes: branco, preto, azul, vermelho, verde, amarelo, roxo ou rosa.");
+        input.value = "";
+        input.focus();
+    }
+}
+        document.getElementById("botaoEnviar").addEventListener("click", trocarCorInput);
+    </script>
 </body>
 </html>
