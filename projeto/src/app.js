@@ -18,9 +18,13 @@ function proximaPagina(){
     window.location.href = "index_login.html";
 }
 
-let botaoIrLogin = document.getElementById("btnIrLogin");
+let botaoIrLogin = document.getElementById("btnirLogin");
 if (botaoIrLogin) {
     botaoIrLogin.addEventListener("click", proximaPagina);
+let botaoirExercicios = document.getElementById("enviarlog")
+if (botaoirExercicios){
+    botaoirExercicios.addEventListener("click", proximaPagina )
+}
 }
 
 
