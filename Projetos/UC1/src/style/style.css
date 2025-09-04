@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9fbfd;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header#cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header .links {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header .links:hover {
+    color: #5A189A;
+    border-bottom: 2px solid #5A189A;
+    padding-bottom: 2px;
+}
+
+.botoes {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#btnEntrar {
+    background: #fff;
+    border: 1px solid #5A189A;
+    color: #5A189A;
+}
+
+#btnEntrar:hover {
+    background: #5A189A;
+    color: #fff;
+}
+
+#btnCadastro {
+    background: #5A189A;
+    color: #fff;
+}
+
+#btnCadastro:hover {
+    background: #280137;
+}
+
+/* ===== APRESENTAÇÃO (hero section) ===== */
+#apresentação {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f9fbfd 0%, #f1f5f9 100%);
+}
+
+#apresentação h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#apresentação h1 span {
+    color: #5A189A; /* cor tech em destaque */
+}
+
+#apresentação p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #666;
+}
+
+#apresentação button {
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #5A189A;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#apresentação button:first-of-type {
+    background: #5A189A;
+    color: #fff;
+}
+
+#apresentação button:first-of-type:hover {
+    background: #280137;
+}
+
+#apresentação button:last-of-type {
+    background: #fff;
+    color: #5A189A;
+}
+
+#apresentação button:last-of-type:hover {
+    background: #f3e8ff;
+}
+
+/* ===== POR QUE ESCOLHER ===== */
+#pqEscolher {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#pqEscolher h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #280137;
+}
+
+#pqEscolher p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.pqEscolhercard {
+    display: inline-block;
+    width: 280px;
+    padding: 30px 20px;
+    margin: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    vertical-align: top;
+}
+
+.pqEscolhercard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.pqEscolhercard h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #5A189A;
+}
+
+.pqEscolhercard p {
+    color: #666;
+    font-size: 15px;
+}
