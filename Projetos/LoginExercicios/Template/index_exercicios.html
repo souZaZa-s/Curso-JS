@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+</head>
+<body>
+    <button id="Exercicio1">Exercício 1</button>
+    <button id="Exercicio2">Exercício 2</button>
+    <button id="Exercicio3">Exercício 3</button>
+    <button id="Exercicio4">Exercício 4</button>
+    <button id="Exercicio5">Exercício 5</button>
+    <button id="Exercicio6">Exercício 6</button>
+    <button id="Exercicio7">Exercício 7</button>
+    <button id="Exercicio8">Exercício 8</button>
+    <button id="Exercicio9">Exercício 9</button>
+    <button id="Exercicio10">Exercício 10</button>
+
+    <script>
+    let paginas = {
+    Exercicio1: "Exercicios/exercicio1.html",
+    Exercicio2: "Exercicios/exercicio2.html",
+    Exercicio3: "Exercicios/exercicio3.html",
+    Exercicio4: "Exercicios/exercicio4.html",
+    Exercicio5: "Exercicios/exercicio5.html",
+    Exercicio6: "Exercicios/exercicio6.html",
+    Exercicio7: "Exercicios/exercicio7.html",
+    Exercicio8: "Exercicios/exercicio8.html",
+    Exercicio9: "Exercicios/exercicio9.html",
+    Exercicio10: "Exercicios/exercicio10.html"
+};
+
+        for (let id in paginas) {
+            let botao = document.getElementById(id);
+            if (botao) {
+                botao.addEventListener("click", function() {
+                    window.location.href = paginas[id];
+                });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10 - Contagem Regressiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 10 - Contagem Regressiva</h1>
+        <button onclick="contagemRegressiva()">Iniciar</button>
+        <p id="resultado"></p>
+        <button id="btnVoltar">Voltar para o índice de exercícios</button>
+
+
+    </div>
+
+    <script>
+        function contagemRegressiva() {
+            let resultado = document.getElementById("resultado");
+            let texto = "";
+
+            for (let i = 20; i >= 0; i--) {
+                texto += i + " ";
+            }
+
+            resultado.textContent = texto;
+        }
+        document.getElementById("btnVoltar").addEventListener("click", function() {
+    window.location.href = "/template/index_exercicios.html";
+});
+
+    </script>
+</body>
+</html>
