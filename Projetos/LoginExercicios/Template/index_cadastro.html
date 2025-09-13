@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+
+    <!-- Importando fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CA:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="/projeto/style/style.css">
 </head>
 <body>
-    <div>
-        <p>Faça seu cadastro!</p>
-        
-        <input type="text" name="Nome" id="nome" placeholder="Nome"> <br>
-        <input type="text" name="Email" id="email" placeholder="Email"> <br>
-        <input type="password" name="Senha" id="senha" placeholder="Senha"> <br>
-        
-        <button id="bntenviar">Enviar</button>
-        
+    <div id="containercadastro">
+        <h1 class="pacifico-regular">Faça seu cadastro!</h1>
+
+        <input type="text" id="nome" placeholder="Nome"> <br>
+        <input type="text" id="email" placeholder="E-mail"> <br>
+        <input type="password" id="senha" placeholder="Senha"> <br>
+
+        <button id="enviar">Enviar</button>
+
         <p>Já tem cadastro? Efetue o login:</p>
-        
         <button id="btnirLogin">Efetuar login</button>
     </div>
 
-    
-    <script src="/src/app.js"></script>
+    <script src="/projeto/src/app.js"></script>
 </body>
-</html>C:\Users\jose.fstrunquim\Curso-JS-4\projeto\Template\index_cadastro.html
+</html>
