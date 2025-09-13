@@ -1,0 +1,402 @@
+
+
+
+
+#containerlogin{
+
+
+    text-align: center;
+
+
+    background-color: none;
+
+
+    margin: 5px auto;
+
+
+    padding: 5px;
+
+
+    width: 300px;
+
+
+    border-radius: 5px;
+
+
+    text-align: center;
+
+
+    padding: 55px;
+
+
+    width: 320px;
+
+
+    border-radius: 65px;
+
+
+    border: 6px solid rgb(172, 138, 138);
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+    box-shadow: 1px 1px 20px rgb(233, 188, 195), -10px 20px rgb(122, 103, 106);
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+    text-align: center;
+
+
+    padding: 30px;
+
+
+    
+
+
+}
+
+
+#containercadastro{
+
+
+    text-align: center;
+
+
+    background-color: none;
+
+
+    margin: 5px auto;
+
+
+    padding: 5px;
+
+
+    width: 300px;
+
+
+    border-radius: 5px;
+
+
+    text-align: center;
+
+
+    padding: 55px;
+
+
+    width: 320px;
+
+
+    border-radius: 65px;
+
+
+    border: 6px solid rgb(172, 138, 138);
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+    box-shadow: 1px 1px 20px rgb(233, 188, 195), -10px 20px rgb(122, 103, 106);
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+    text-align: center;
+
+
+    padding: 30px;
+
+
+}
+
+
+
+
+
+body{
+
+
+    background-color: rgb(241, 207, 213);
+
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/images/16326838_rm295-mynt-22.jpg");
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+}
+
+
+button{
+
+
+    color: white;   
+
+
+    padding: 9px 45px ;
+
+
+    margin: 6px ;
+
+
+    background-color: rgb(233, 166, 177) ;
+
+
+    border: rgb(230, 194, 200);
+
+
+    border-radius: 100px;
+
+
+    cursor: pointer;
+
+
+    transition: background-color 03s ease;
+
+
+    border-radius: 20px;
+
+
+    box-shadow: 10px 10px 20px rgb(109, 79, 84), inset -10px -10px 20px rgb(109, 90, 90);
+
+
+}
+
+
+input[type = text] {
+
+
+    padding: 14px;
+
+
+    width: 298px;
+
+
+    border: 5px solid #d1a6a6;
+
+
+    border-radius: 50px;
+
+
+    margin-right: 10px;
+
+
+    box-shadow: 1px 1px 20px rgb(250, 242, 243), inset -10px -10px 20px rgb(179, 148, 148);
+
+
+
+
+
+}
+
+
+input:focus{
+
+
+    outline: none;
+
+
+    box-shadow: 0 0 0 2px pink;
+
+
+    border: 3px solid rgb(177, 98, 107);
+
+
+    margin-right: 10px;
+
+
+    box-shadow: none, inset -10px -10px 20px rgb(179, 148, 148);
+
+
+}
+
+
+
+
+
+h1.pacifico-regular {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px; /* aumentar para ficar mais parecido */
+    color: #f7b0b0; /* cor mais próxima do protótipo */
+    text-shadow: 2px 2px 5px rgba(255, 200, 200, 0.6); /* sombra suave */
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.pacifico-regular {
+
+
+  font-family: 'Pacifico', cursive;
+
+
+  font-weight: 400;
+
+
+  font-style:italic
+
+
+}
+
+
+
+
+
+button:focus{
+
+
+    outline: none;
+
+
+    box-shadow: 0 0 0 2px rgb(236, 196, 203);
+
+
+    border: 1px solid rgb(177, 98, 107);
+
+
+    border-radius: 20px;
+
+
+    box-shadow: 10px 10px 20px rgb(3, 2, 2), inset -10px -10px 20px rgb(109, 90, 90);
+
+
+}
+
+
+
+
+#containerexercicio {
+    text-align: center;
+    margin: 10px auto;
+    width: 360px; /* largura mais ajustada */
+    padding: 30px 20px;
+    border-radius: 65px;
+    border: 6px solid rgb(172, 138, 138);
+    background: none;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 20px rgb(233, 188, 195), -10px 20px rgb(122, 103, 106);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* espaço entre os botões */
+}
+
+#containerexercicio button {
+    width: 140px; /* largura fixa para alinhar em colunas */
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 5px 5px 15px rgba(255, 192, 192, 0.6), inset -3px -3px 10px rgba(255, 200, 200, 0.4);
+    transition: 0.3s;
+}
+
+#containerexercicio button:hover {
+    background-color: #f78b92;
+}
+
+
+body{
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    padding-top: 150px;
+
+
+}
+
+
+button {
+    background-color: #f4aab0; /* cor mais próxima do protótipo */
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    margin: 8px;
+    border-radius: 50px; /* arredondamento maior */
+    box-shadow: 5px 5px 15px rgba(255, 192, 192, 0.6), inset -3px -3px 10px rgba(255, 200, 200, 0.4);
+    font-family: 'Poppins', sans-serif; /* deixar consistente */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+h1{
+
+
+  font-family: 'Poppins', sans-serif;
+
+
+  font-size: 40px;
+
+
+  color: #dd9e9e;
+
+
+  text-shadow: 1px 1px 3px rgba(150, 49, 49, 0.7);
+
+
+}
+
+
+
+
+
+.pacifico-regular {
+
+
+  font-family: 'Pacifico', cursive;
+
+
+  font-weight: 400;
+
+
+  font-style:italic
+
+
+}
+
+input[type=password] {
+    padding: 14px;
+    width: 298px;
+    border: 5px solid #d1a6a6;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 20px rgb(250, 242, 243), inset -10px -10px 20px rgb(179, 148, 148);
+}
+
+
+
+button:hover {
+    background-color: #f78b92; /* muda levemente ao passar o mouse */
+}

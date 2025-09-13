@@ -1,37 +1,38 @@
+// ------------------- CADASTRO -------------------
 function cadastro() {
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
 
-    localStorage.setItem("usuario", JSON.stringify({ nome, email, senha }));
-    console.log("Usuário cadastrado:", nome, email, senha);
-    alert("Usuario cadastrado")
+    if (!nome || !email || !senha) {
+        alert("Preencha todos os campos!");
+        return;
+    }
 
-   
+    localStorage.setItem("usuario", JSON.stringify({ nome, email, senha }));
+    alert("Usuário cadastrado com sucesso!");
 }
-let botaoCadastro = document.getElementById("bntenviar");
+
+// Botão de cadastro
+let botaoCadastro = document.getElementById("enviar");
 if (botaoCadastro) {
     botaoCadastro.addEventListener("click", cadastro);
 }
 
-function proximaPagina(){
+// ------------------- NAVEGAÇÃO -------------------
+function irParaLogin() {
     window.location.href = "index_login.html";
 }
 
 let botaoIrLogin = document.getElementById("btnirLogin");
 if (botaoIrLogin) {
-    botaoIrLogin.addEventListener("click", proximaPagina);
-let botaoirExercicios = document.getElementById("enviarlog")
-if (botaoirExercicios){
-    botaoirExercicios.addEventListener("click", proximaPagina )
-}
+    botaoIrLogin.addEventListener("click", irParaLogin);
 }
 
-
+// ------------------- LOGIN -------------------
 function login() {
-    let nomeLogin = document.getElementById("nomelog").value;
-    let emailLogin = document.getElementById("emaillog").value;
-    let senhaLogin = document.getElementById("senhalog").value;
+    let nomeLogin = document.getElementById("nomeLogin").value;
+    let senhaLogin = document.getElementById("senhaLogin").value;
 
     let dadosSalvos = localStorage.getItem("usuario");
 
@@ -42,14 +43,16 @@ function login() {
 
     let usuario = JSON.parse(dadosSalvos);
 
-    if (emailLogin === usuario.email && senhaLogin === usuario.senha) {
+    if (nomeLogin === usuario.nome && senhaLogin === usuario.senha) {
         alert("Login bem-sucedido!");
         window.location.href = "index_exercicios.html";
     } else {
-        alert("Email ou senha incorretos!");
+        alert("Nome ou senha incorretos!");
     }
 }
-let botaoLogin = document.getElementById("enviarlog");
+
+// Botão de login
+let botaoLogin = document.getElementById("btnLogin");
 if (botaoLogin) {
     botaoLogin.addEventListener("click", login);
 }
